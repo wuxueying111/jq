@@ -1,0 +1,89 @@
+﻿一、命令
+
+1.全局安装)(gulp)
+npm install --global gulp
+
+2. 在你的项目的 下安装gulp
+npm install --save-dev gulp
+
+3.在你项目的根目录下创建 gulpfile.js 文件
+var gulp = require('gulp');
+gulp.task('default', function() {
+	
+});
+
+4、其他命令
+npm install --save-dev gulp-uglify	压缩js
+npm install --save-dev gulp-minify-css	压缩css
+npm install --save-dev gulp-imagemin	压缩图片
+npm install --save-dev imagemin-pngquant压缩图片 
+npm install --save-dev gulp-css-spriter 压缩雪碧图
+
+npm install --save-dev node-sass
+npm install --save-dev gulp-sass
+npm install --save-dev gulp-compass 
+
+npm install --save-dev amd-optimize
+npm install -g ng-annotate
+npm install --save-dev ng-annotate
+
+//npm install --save-dev gulp-ruby-sass
+
+npm install --save-dev gulp-rename	重命名
+npm install --save-dev gulp-concat	合并js
+npm install --save-dev gulp-rev
+npm install --save-dev gulp-rev-collector
+
+npm install --save-dev gulp-livereload    浏览器自动刷新页面
+
+配置 gulpfile.js
+
+
+
+4.运行 gulp
+
+$ gulp
+
+//无服务器
+npm install --global http-server 
+npm install --save-dev http-server
+
+http-server -a localhost -p 8000
+
+gulp watch
+
+
+
+二、js合并、重命名、压缩、加密
+
+1、js合并
+(1)npm install gulp-concat --save-dev
+
+(2)在gulpfile.js中输入代码
+
+	var gulp = require("gulp");
+	var concat = require("gulp-concat");
+	gulp.task("testConcat",function(){
+			gulp.src("js/*.js").pipe(concat("all.js")).pipe(gulp.dest("js/dist"));				  
+	})
+
+(3)命令提示符执行：gulp testConcat
+
+
+2、js重命名
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
